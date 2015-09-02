@@ -9,12 +9,20 @@ var uglify  = require('gulp-uglify');
 */
 gulp.task('minify', function() {
     
+    var glob = 'src/*.js';
+
+    /*
+        Observa os arquivos js e executa a tarefa caso haja alteração.
+    */
+    gulp.watch(glob, ['minify']);
+
     /*
         Seleciona todos os arquivos javascript na pasta "src", 
         minifica com o plugin uglify e envia o resultado para a pasta "dist"
     */
-    return gulp.src('src/*.js')
+    return gulp.src(glob)
                 .pipe(uglify())
                 .pipe(gulp.dest('dist'));
 
 });
+
