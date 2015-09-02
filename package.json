@@ -1,0 +1,9 @@
+{
+  "name": "gulp-basic",
+  "author": "Daniel Leite de Oliveira (dleitee@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.4.0"
+  }
+}
