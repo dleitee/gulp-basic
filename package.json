@@ -4,6 +4,6 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-uglify": "^1.4.0"
+    "gulp-uglify": "^3.0.0"
   }
 }
